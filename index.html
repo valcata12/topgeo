@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta https-equiv="Content-Security-Policy" content="default-src *;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <script type="module" src="prava.js"></script>
+    <title>Права задача</title>
+</head>
+<body>
+    <div id="center">
+        <div class="mobile">
+        <select name="chose-problem" id="problemo">
+            <option value="first">Първа основна</option>
+            <option value="second">Обратна</option>
+        </select>
+        <div id="prava-zadacha">
+            <br><br>
+            <label for="x-1" class="prava">X:</label>
+            <input type="number" id="x-1" name="x-1" class="prava">
+            <br><br>
+            <label for="y-1" class="prava">Y:</label>
+            <input type="number" id="y-1" name="y-1" class="prava">
+            <br><br>
+            <label for="dist" class="prava">Разстояние</label>
+            <input type="number" id="dist" name="dist" class="prava">
+            <br><br>
+            <label for="ang-1" class="prava">Ъгъл</label>
+            <input type="number" id="ang-1" name="ang-1" class="angle prava">
+            <input type="number" id="ang-2" name="ang=2" class="angle prava">
+            <br><br>
+            <h2 class="prava">Резултат</h2>
+            <br>
+            <label for="x-2" class="prava">X2:</label>
+            <input type="number" id="x-2" name="x-2" class="prava">
+            <br> <br>
+            <label for="y-2" class="prava">Y2:</label>
+            <input type="number" id="y-2" name="y-2" class="prava"> 
+            <br><br>
+            <button type="submit" id="prava-buton">РЕШИ</button>
+        </div>
+        <div id="obratna-zadacha">
+            <br><br>
+            <label for="x-1o" class="obratna">X1:</label>
+            <input type="number" id="x-1o" name="x-1o" class="obratna">
+            <br><br>
+            <label for="y-1o" class="obratna">Y1:</label>
+            <input type="number" id="y-1o" name="y-1o" class="obratna">
+            <br><br>
+            <label for="x-2o" class="obratna">X2:</label>
+            <input type="number" id="x-2o" name="x-2o" class="obratna">
+            <br> <br>
+            <label for="y-2o" class="obratna">Y2:</label>
+            <input type="number" id="y-2o" name="y-2o" class="obratna"> 
+            <br><br>
+            <h2 class="obratna">Резултат</h2>
+            <br>
+            <label for="dist" class="obratna">Разстояние</label>
+            <input type="number" id="dist-o" name="dist" class="obratna">
+            <br><br>
+            <label for="ang-1o" class="obratna">Ъгъл</label>
+            <input type="number" id="ang-1o" name="ang-1o" class="angle obratna">
+            <input type="number" id="ang-2o" name="ang=2o" class="angle obratna">
+            <br><br>
+            <button type="button" id="obratna-button">РЕШИ</button>
+            
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

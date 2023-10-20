@@ -1,0 +1,54 @@
+.angle {
+    width: 3em;
+}
+/* #center {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+} */
+h2 {
+    text-align: center;
+}
+
+#obratna-zadacha {
+    display: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#center {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ccc; /* Set the background color to what you prefer */
+}
+
+.mobile {
+
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        /* Add other styles as needed */
+}
+
+input {
+    height: 3em;
+    width: 15em;
+    
+}
+
+select {
+    height: 4em;
+}
+
+button {
+    height: 4em;
+    width: 10em;
+}
