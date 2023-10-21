@@ -44,3 +44,7 @@ body {
 #obratna-zadacha {
     display: none;
 }
+#problemo {
+    height: 2.5em;
+    width: 5em;
+}

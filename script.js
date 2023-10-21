@@ -2,6 +2,19 @@ import {firstProblemFn} from './prava.js'
 
 window.onload = function () {
     const selectionDropdown = document.getElementById('problemo')
+    let numberInputEle = document.getElementById('ang-1')
+
+    function nextNumberSwitch() {
+        let maxLength = 2
+        let currlength = numberInputEle.value.length;
+        if(currlength === maxLength) {
+            document.getElementById('ang-2').focus();
+        }
+        console.log('a')
+    }
+
+    numberInputEle.addEventListener('keypress', nextNumberSwitch)
+
 
     selectionDropdown.addEventListener('change', function () {
         console.log(selectionDropdown.value)
