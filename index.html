@@ -11,61 +11,73 @@
     <title>Права задача</title>
 </head>
 <body>
-    <div id="center">
+    <div class="form-container">
         <div class="mobile">
-        <select name="chose-problem" id="problemo">
-            <option value="first">Първа основна</option>
-            <option value="second">Обратна</option>
-        </select>
+            <div class="form-group">
+                <select name="chose-problem" id="problemo">
+                    <option value="first">ПГЗ</option>
+                    <option value="second">ОГЗ</option>
+                </select>
+            </div>
         <div id="prava-zadacha">
-            <br><br>
-            <label for="x-1" class="prava">X:</label>
-            <input type="tel" id="x-1" name="x-1" class="prava">
-            <br><br>
-            <label for="y-1" class="prava">Y:</label>
-            <input type="tel" id="y-1" name="y-1" class="prava">
-            <br><br>
-            <label for="dist" class="prava">Разстояние</label>
-            <input type="tel" id="dist" name="dist" class="prava">
-            <br><br>
-            <label for="ang-1" class="prava">Ъгъл</label>
-            <input type="tel" id="ang-1" name="ang-1" class="angle prava">
-            <input type="tel" id="ang-2" name="ang=2" class="angle prava">
-            <br><br>
+            <div class="form-group">
+                <label for="x-1" class="prava">X1:</label>
+                <input type="tel" id="x-1" name="x-1" class="prava form-input">
+            </div>
+            <div class="form-group">
+                <label for="y-1" class="prava">Y1:</label>
+                <input type="tel" id="y-1" name="y-1" class="prava form-input">
+            </div>
+            <div class="form-group">
+                <label for="dist" class="prava">Д:</label>
+                <input type="tel" id="dist" name="dist" class="prava form-input">
+            </div>
+            <div class="form-group">
+                <label for="ang-1" class="prava">Ъгъл:</label>
+                <input type="tel" id="ang-1" name="ang-1" class="angle prava angle-contain">
+                <input type="tel" id="ang-2" name="ang=2" class="angle prava angle-contain">
+            </div>
             <h2 class="prava">Резултат</h2>
-            <br>
-            <label for="x-2" class="prava">X2:</label>
-            <input type="tel" id="x-2" name="x-2" class="prava">
-            <br> <br>
-            <label for="y-2" class="prava">Y2:</label>
-            <input type="tel" id="y-2" name="y-2" class="prava"> 
-            <br><br>
-            <button type="button" id="prava-buton">РЕШИ</button>
+            <div class="form-group">
+                <label for="x-2" class="prava">X2:</label>
+                <input type="tel" id="x-2" name="x-2" class="prava form-input" disabled>
+            </div>
+            <div class="form-group">
+                <label for="y-2" class="prava">Y2:</label>
+                <input type="tel" id="y-2" name="y-2" class="prava form-input" disabled>
+            </div>
+            <div class="form-group">
+                <button type="button" id="prava-buton" class="form-button">РЕШИ</button>
+            </div>
         </div>
         <div id="obratna-zadacha">
-            <br><br>
-            <label for="x-1o" class="obratna">X1:</label>
-            <input type="tel" id="x-1o" name="x-1o" class="obratna">
-            <br><br>
-            <label for="y-1o" class="obratna">Y1:</label>
-            <input type="tel" id="y-1o" name="y-1o" class="obratna">
-            <br><br>
-            <label for="x-2o" class="obratna">X2:</label>
-            <input type="tel" id="x-2o" name="x-2o" class="obratna">
-            <br> <br>
-            <label for="y-2o" class="obratna">Y2:</label>
-            <input type="tel" id="y-2o" name="y-2o" class="obratna"> 
-            <br><br>
+            <div class="form-group">
+                <label for="x-1o" class="obratna">X1:</label>
+                <input type="tel" id="x-1o" name="x-1o" class="obratna">
+            </div>
+            <div class="form-group">
+                <label for="y-1o" class="obratna">Y1:</label>
+                <input type="tel" id="y-1o" name="y-1o" class="obratna">
+            </div>
+            <div class="form-group">
+                <label for="x-2o" class="obratna">X2:</label>
+                <input type="tel" id="x-2o" name="x-2o" class="obratna">
+            </div>
+            <div class="form-group">
+                <label for="y-2o" class="obratna">Y2:</label>
+                <input type="tel" id="y-2o" name="y-2o" class="obratna"> 
+            </div>
             <h2 class="obratna">Резултат</h2>
-            <br>
-            <label for="dist" class="obratna">Разстояние</label>
-            <input type="tel" id="dist-o" name="dist" class="obratna">
-            <br><br>
-            <label for="ang-1o" class="obratna">Ъгъл</label>
-            <input type="tel" id="ang-1o" name="ang-1o" class="angle obratna">
-            <input type="tel" id="ang-2o" name="ang=2o" class="angle obratna">
-            <br><br>
-            <button type="button" id="obratna-button">РЕШИ</button>
+            <div class="form-group">
+                <label for="dist" class="obratna">Д:</label>
+                <input type="tel" id="dist-o" name="dist" class="obratna" disabled>
+            </div>
+            <div class="form-group">
+                <label for="ang-1o" class="obratna">Ъгъл:</label>
+                <input type="tel" id="ang-1o" name="ang-1o" class="angle obratna angle-contain" disabled>
+                <input type="tel" id="ang-2o" name="ang=2o" class="angle obratna angle-contain"  disabled>
+            </div>
+            <button type="button" id="obratna-button" class="form-button">РЕШИ</button>
             
         </div>
     </div>
